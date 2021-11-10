@@ -8,7 +8,7 @@ import forestry.api.core.ItemGroups;
 import forestry.apiculture.ModuleApiculture;
 import forestry.core.items.ItemForestry;
 import forestry.core.items.ItemOverlay;
-import forestry.core.items.ItemScoop;
+//import forestry.core.items.ItemScoop;
 import forestry.modules.features.FeatureItem;
 import forestry.modules.features.FeatureItemGroup;
 import forestry.modules.features.FeatureProvider;
