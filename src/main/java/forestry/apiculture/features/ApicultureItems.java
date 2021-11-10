@@ -1,28 +1,14 @@
 package forestry.apiculture.features;
 
+import forestry.apiculture.items.*;
 import net.minecraft.inventory.EquipmentSlotType;
 
 import forestry.api.apiculture.genetics.EnumBeeType;
 import forestry.api.core.ItemGroups;
 import forestry.apiculture.ModuleApiculture;
-import forestry.apiculture.items.EnumHoneyComb;
-import forestry.apiculture.items.EnumHoneyDrop;
-import forestry.apiculture.items.EnumPollenCluster;
-import forestry.apiculture.items.EnumPropolis;
-import forestry.apiculture.items.ItemArmorApiarist;
-import forestry.apiculture.items.ItemBeeGE;
-import forestry.apiculture.items.ItemHabitatLocator;
-import forestry.apiculture.items.ItemHiveFrame;
-import forestry.apiculture.items.ItemHoneyComb;
-import forestry.apiculture.items.ItemImprinter;
-import forestry.apiculture.items.ItemMinecartBeehousing;
-import forestry.apiculture.items.ItemPollenCluster;
-import forestry.apiculture.items.ItemPropolis;
-import forestry.apiculture.items.ItemScoop;
-import forestry.apiculture.items.ItemSmoker;
-import forestry.apiculture.items.ItemWaxCast;
 import forestry.core.items.ItemForestry;
 import forestry.core.items.ItemOverlay;
+import forestry.core.items.ItemScoop;
 import forestry.modules.features.FeatureItem;
 import forestry.modules.features.FeatureItemGroup;
 import forestry.modules.features.FeatureProvider;
@@ -48,6 +34,7 @@ public class ApicultureItems {
 	public static final FeatureItem<ItemHiveFrame> FRAME_UNTREATED = REGISTRY.item(() -> new ItemHiveFrame(80, 0.9f), "frame_untreated");
 	public static final FeatureItem<ItemHiveFrame> FRAME_IMPREGNATED = REGISTRY.item(() -> new ItemHiveFrame(240, 0.4f), "frame_impregnated");
 	public static final FeatureItem<ItemHiveFrame> FRAME_PROVEN = REGISTRY.item(() -> new ItemHiveFrame(720, 0.3f), "frame_proven");
+	public static final FeatureItem<ItemHiveFrame> FRAME_CREATIVE = REGISTRY.item(ItemCreativeHiveFrame::new,"frame_creative");
 
 	// / BEE RESOURCES
 	public static final FeatureItemGroup<ItemOverlay, EnumHoneyDrop> HONEY_DROPS = REGISTRY.itemGroup((type) -> new ItemOverlay(ItemGroups.tabApiculture, type), "honey_drop", EnumHoneyDrop.values());

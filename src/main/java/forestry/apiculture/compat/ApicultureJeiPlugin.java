@@ -52,7 +52,7 @@ public class ApicultureJeiPlugin implements IModPlugin {
 			return;
 		}
 
-		JeiUtil.addDescription(registry, "frames", ApicultureItems.FRAME_IMPREGNATED.getItem(), ApicultureItems.FRAME_PROVEN.getItem(), ApicultureItems.FRAME_UNTREATED.getItem());
+		JeiUtil.addDescription(registry, "frames", ApicultureItems.FRAME_IMPREGNATED.getItem(), ApicultureItems.FRAME_PROVEN.getItem(), ApicultureItems.FRAME_UNTREATED.getItem(), ApicultureItems.FRAME_CREATIVE.getItem());
 
 		JeiUtil.addDescription(registry, "apiarist.suit", ApicultureItems.APIARIST_BOOTS.getItem(), ApicultureItems.APIARIST_CHEST.getItem(), ApicultureItems.APIARIST_HELMET.getItem(), ApicultureItems.APIARIST_LEGS.getItem());
 
