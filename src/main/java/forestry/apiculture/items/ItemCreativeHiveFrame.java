@@ -31,6 +31,12 @@ public class ItemCreativeHiveFrame extends ItemHiveFrame
     }
 
     @Override
+    public boolean isFoil(ItemStack p_77636_1_)
+    {
+        return true;
+    }
+
+    @Override
     public IBeeModifier getBeeModifier(ItemStack frame)
     {
         return beeModifier;
