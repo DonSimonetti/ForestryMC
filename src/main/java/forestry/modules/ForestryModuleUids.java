@@ -22,6 +22,7 @@ public class ForestryModuleUids {
 	public static final String BOOK = "book";
 	public static final String CULTIVATION = "cultivation";
 	public static final String RESEARCH = "research";
+	public static final String MYCOLOGY = "mycology";
 
 	//Mod Plugins
 	public static final String BIOMES_O_PLENTY = "biomes.o.plenty";
