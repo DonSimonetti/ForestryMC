@@ -11,7 +11,7 @@ import net.minecraft.item.ItemStack;
 public class ItemFungusGE extends ItemGE implements IColoredItem
 {
 
-    protected ItemFungusGE()
+    public ItemFungusGE()
     {
         super(new Properties().tab(ItemGroups.tabMycology));
     }
