@@ -16,5 +16,6 @@ public class ItemGroups {
 	public static ItemGroup tabApiculture;
 	public static ItemGroup tabArboriculture;
 	public static ItemGroup tabLepidopterology;
+	public static ItemGroup tabMycology;
 
 }

@@ -13,6 +13,7 @@ package forestry.core;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.ResourceLocation;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -54,6 +55,10 @@ public class ItemGroupForestry extends ItemGroup {
 		if (ModuleHelper.isEnabled(ForestryModuleUids.LEPIDOPTEROLOGY)) {
 			ItemGroups.tabLepidopterology = new ItemGroupForestry(4, "lepidopterology");
 		}
+
+		if (ModuleHelper.isEnabled(ForestryModuleUids.MYCOLOGY)) {
+			ItemGroups.tabMycology = new ItemGroupForestry(5, "mycology");
+		}
 	}
 
 	public static final ItemGroup tabForestry = new ItemGroupForestry(0, Constants.MOD_ID);
@@ -86,6 +91,8 @@ public class ItemGroupForestry extends ItemGroup {
 				return TreeManager.treeRoot.getTypes().createStack(new Tree(TreeDefinition.Oak.getGenome()), EnumGermlingType.SAPLING);
 			case 4:
 				return ButterflyManager.butterflyRoot.getTypes().createStack(new Butterfly(ButterflyDefinition.Brimstone.getGenome()), EnumFlutterType.BUTTERFLY);
+			case 5:
+				return Items.CRIMSON_FUNGUS.getDefaultInstance();
 			default:
 				iconItem = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Constants.MOD_ID, "fertilizer_compound"));
 				break;
